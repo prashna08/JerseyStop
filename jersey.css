@@ -1,0 +1,769 @@
+header{
+    width: 100%;
+    z-index: 5;
+    position: fixed; /* to make the header fixed */
+    background-color: #14100f;
+}
+
+header .nav-bar{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px;
+}
+.nav-bar .logo-bar{
+    display: flex;
+    align-items: center;
+    
+}
+.nav-bar .logo-bar .logo-text{
+    line-height: 1;
+    font-family: baseneue;
+    padding-right: 50px;
+    font-size: 25px;
+    color: #f7f7f6;
+}
+
+.nav-bar .nav-list{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+} 
+
+
+.nav-bar .nav-list .nav-link{
+    font-size: 18px;
+    padding: 0 15px;
+    
+    color: #f7f7f6;
+    position: relative;
+}
+.nav-bar .nav-list .nav-link:hover{
+    color: white;
+}
+.nav-bar .nav-list .nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-radius: 3px;
+    background-color:#f7f7f6;
+    transition: 0.3s ease;
+}
+.nav-bar .nav-list .nav-link:hover::before{
+    width: 100%;
+}
+/*Hero-section*/
+
+.hero-section{
+    min-height: 100vh; /* to make the hero section full height */
+   background-image: linear-gradient(
+    rgba(4,9,30,0.7),rgba(4,9,30,0.7)),
+    url(img/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+
+   
+
+
+}
+.hero-section .section-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* to make the hero section full height */
+
+}
+.hero-section .hero-detail{
+    color: #f7f7f6;
+   text-align: center;
+    
+    
+}
+.hero-section .hero-detail .title{
+    font-size: 50px;
+    font-family: baseneue-mid;
+    color: #f5efeb
+}
+.hero-section .hero-detail .title .title-main{
+    font-family: baseneue-mid;
+    color: #f5efeb
+}
+.hero-section .hero-detail .subtitle{
+    font-size: 30px;
+    margin: 15px 0;
+
+    
+}
+
+
+.hero-section .hero-detail .buttons{
+    display: flex;
+    gap: 30px;
+    
+    margin-top: 40px;
+    justify-content: center;
+}
+.hero-section .hero-detail .button{
+    padding: 10px 26px;
+    background: transparent;
+    color: #f7f7f6;
+    border-radius: 8px;
+    border: 2px solid #f7f7f6;
+    font-family: baseneue-mid;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s ease;
+    position: relative;
+}
+.hero-section .hero-detail .button::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #f7f7f6;
+    transition: 0.5s;
+    z-index: -1;
+}
+.hero-section .hero-detail .button:hover::before
+{
+    width: 100%;
+}
+.hero-section .hero-detail .button:hover{
+    color: #14100f;
+}
+
+/*Brand-section*/
+.brand-section{
+    padding: 40px 0;
+    background: #f7f7f6;
+    height: auto;
+}
+
+.brand-section .section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.brand-section  .feature-details{
+    margin: 0 auto;
+    width: 70%;
+    
+    
+}
+.brand-section .feature-details .title{
+    font-size: 23px;
+    font-family: baseneue-mid;
+    text-transform: uppercase;
+    margin-bottom:20px;
+}
+.brand-section .feature-details .title .title-main{
+    font-family: baseneue-mid;
+    color: rgb(110, 5, 5);
+}
+
+.brand-section .feature-details .description{
+    font-size: 18px;
+   
+}
+
+.brand-section .container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.brand-section .container .support-container{
+    width: 350px;
+    height: auto;
+    background-color:#efefef;
+    border-radius: 5px;
+   box-shadow: 0 0 5px rgb(207, 207, 207);
+    text-align: center;
+    transition: 0.3s ease;
+    
+}
+.brand-section .container .support-container:hover{
+    background-color: #eaeaea;
+    box-shadow: 0 0 7px rgb(163, 163, 163);
+}
+.brand-section .support-container .support-icon{
+    width: 60px;
+}
+.brand-section .support-container .text{
+    font-size: 17px;
+    margin: 7px 0;
+}
+.brand-section .support-container .text-supp{
+    font-size: 14px;
+}
+
+/*Collection Section*/
+.collection-section{
+    height: auto;
+    background: #14100f;
+    color: #f7f7f6;
+    padding: 40px 0;
+
+}
+.collection-section .section-content{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    height: auto;
+   
+}
+.collection-section .collect-img-wrapper{
+    width: 650px;
+    
+   
+}
+.collection-section .collect-img-wrapper .collect-img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.collection-section .collect-img-wrapper .collect-img:hover{
+    box-shadow: 0 0 10px gray;
+    
+}
+.collection-section .collection-detail .title{
+    font-size: 40px;
+    font-family: baseneue-mid;
+    width: 50%;
+   
+    
+}
+.collection-section .collection-detail .title .title-main{
+    font-family: dreams;
+    font-size: 40px;
+}
+.collection-section .collection-detail .description{
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.collection-section .collection-detail .buttons{
+    margin: 40px;
+    position: relative;
+}
+
+.collection-section .collection-detail .button{
+    padding: 15px 25px;
+    font-family: baseneue-mid;
+    background-color: #f7f7f6;
+    color: #14100f;
+    position: absolute;
+    left: -40px;
+    border-radius: 15px;
+    transition: 0.4s ease;
+}
+.collection-section .collection-detail .button:hover{
+    border-bottom-right-radius: 0px;
+    box-shadow: 0 0 17px gray;
+    
+}
+
+/*Highlight Section*/
+.highlight-section{
+    height: auto;
+    background: #f7f7f6;
+    color: #14100f;
+    padding: 20px 0;
+    padding-bottom: 50px;
+}
+.highlight-section .section-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 60px;
+    gap: 20px;
+}
+.highlight-section .highlight-card{
+    max-width: 250px;
+    width: calc(33.33%-20px);
+    height: auto;
+    border-radius: 3px;
+    background-color: rgb(242, 241, 241);
+    box-shadow: 0 0 3px rgb(56, 56, 56);
+    transition: 0.5s ease;
+}
+.highlight-section .highlight-card:hover{
+    box-shadow: 0 0 16px gray;
+    
+}
+.highlight-section .highlight-card .highlight-img{
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.highlight-section .highlight-card .text{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 3px;
+}
+.highlight-section .highlight-card .text span{
+    font-size: 14px;
+    margin-left: 5px;
+   
+    color: rgb(145, 143, 143);
+}
+
+.highlight-section .highlight-card .date{
+    font-size: 15px;
+    margin: 5px 0;
+    margin-left: 3px;
+  
+    color: gray;
+}
+.highlight-section .highlight-card .price{
+    font-size: 15px;
+    margin: 5px 3px;
+    color: rgb(43, 42, 42);
+}
+
+/*Contact Section*/
+
+.contact-section {
+    height: auto;
+    background-color: #0f1a2b;
+   color: #e6f0f2;
+    padding: 40px 80px;
+}
+.contact-section .section-content {
+    display: flex;
+    align-items: flex-start; 
+    gap: 50px;
+    justify-content: space-between; 
+}
+
+.contact-section .section-title::after{
+    background-color: rgb(255, 185, 56);
+}
+
+.contact-section .contact-detail{
+    padding: 30px 50px;
+    background-color:#efefef;
+    color: #14100f;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(207, 207, 207);
+   transition: all ease 0.3s;
+   
+}
+
+.contact-section .contact-detail:hover{
+    box-shadow: 0 0 10px rgb(163, 163, 163);
+    background-color: #e2e1e1;
+}
+.contact-section .contact-details .contact-detail{
+  margin-bottom: 20px;
+}
+.contact-section .contact-detail .title{
+    margin-bottom: 5px;
+}
+
+.contact-section .contact{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+}
+.contact-section .contact-title .title{
+    font-family: baseneue-mid;
+}
+.contact-section .contact input{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 50px;
+    border: 2px solid rgb(230, 230, 230);
+    outline: none;
+    box-shadow: 0 0 5px rgb(216, 216, 216);
+   padding-right: 25px;
+   padding-left: 5px;
+   font-weight: 500;
+    border-radius: 5px;
+}
+.contact-section .contact .contact-inputs::placeholder{
+
+    color: rgb(180, 180, 180);
+}
+.contact-section .contact .contact-inputs:focus{
+    border-color: orange;
+}
+.contact-section .contact textarea{
+    height: 140px;
+    border: 2px solid rgb(230, 230, 230);
+    outline: none;
+    box-shadow: 0 0 5px rgb(216, 216, 216);
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-top: 15px;
+    resize: vertical;
+}
+.contact-section .contact .submit-btn{
+    padding: 15px 30px;
+    font-size: 16px;
+    gap: 10px;
+    border: none;
+    color: #14100f;
+    border-radius: 15px;
+    background-color: #f6fafd;
+    transition: all 0.3s ease;
+}
+.contact-section .contact .submit-btn:hover{
+    box-shadow: 0 0 15px gray;
+}
+.contact-section .contact .submit-btn:active{
+    opacity: 0.9;
+}
+
+/*Footer Section*/
+
+.footer-section{
+    padding: 20px 0;
+    background-color: #f5efeb;
+    
+}
+.footer-section .section-content{
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.footer-section :where(.copyright-text, .social-link, .policy-link){
+    color: #0a1623;
+}
+
+.footer-section .social-link-list{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.footer-section .social-link-list .text{
+    font-family: aeonik-bold;
+}
+
+.footer-section .social-link-list .social-link{
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+.footer-section .social-link-list .social-link:hover{
+    color: rgb(253, 197, 94);
+}
+.footer-section .policy-text .separator{
+    margin: 0 5px;
+}
+
+/*Responsive Design*/
+
+@media screen and (max-width: 900px){
+    body.show-mobile-menu header::before{
+        content: '';
+        position: fixed;
+        left:0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(47, 47, 47, 0.3);
+    }
+
+    .nav-bar :where(#menu-open-button, #menu-close-button),
+    .about-section .about-details{
+        font-size: 20px;
+        display: block; 
+        background: none; /* Removes the background */
+        border: none; /* Removes any border if present */
+        outline: none; /* Removes the outline */
+        color: #f7f7f6;
+
+    }
+    .nav-bar :where( #menu-close-button)
+    {
+        color:#14100f;
+    }
+    .nav-bar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .nav-bar .nav-list {
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 340px;
+        left:0px;
+        top:-340px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap:15px;
+        
+        background: #f7f7f6;
+        transition: 0.5s ease;
+    }
+
+    body.show-mobile-menu .nav-bar .nav-list{
+        top: 0px;
+    }
+
+    .nav-bar .nav-list .nav-link {
+        display: block; /* Ensure each link takes full width */
+        margin-top: 0; /* Remove extra margin */
+        text-align: center; /* Center-align the text */
+        padding: 10px 0; /* Add padding for better spacing */
+        font-size: 20px;
+        color: #14100f;
+    }
+    .nav-bar .nav-list .nav-link:hover{
+        color: black;
+    }
+    .nav-bar .nav-list .nav-link::before{
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        border-radius: 3px;
+        background-color:#14100f;
+        transition: 0.3s ease;
+    }
+
+    .brand-section .brand-img-wrapper {
+        max-width: 370px; /* Reduce the maximum width */
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    .brand-section .brand-img {
+        height: 300px; /* Reduce the height */
+    }
+
+    .collection-section .collect-img-wrapper{
+        width: 450px;
+        
+       
+    }
+    .collection-section .collect-img-wrapper .collect-img{
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        
+    }
+
+    .highlight-section .section-content {
+        display: flex; /* Use Flexbox */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: center; /* Center the cards horizontally */
+        gap: 15px; /* Adjust spacing between the cards */
+    }
+
+    .highlight-section .highlight-card {
+        width: calc(33.33% - 15px); /* Ensure 3 cards fit in a row */
+        max-width: 230px; /* Set a maximum width for the cards */
+        height: auto; /* Maintain auto height */
+        border-radius: 3px;
+    }
+  
+    .highlight-section .highlight-card .highlight-img {
+        width: 100%; /* Make the image responsive */
+        height: 300px; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image fits within its container */
+        border-radius: 3px;
+    }
+
+    .contact-section .section-content{
+        align-items: center;
+    }
+
+    .contact-section .contact-detail{
+        margin-top: 15px;
+        padding: 20px 30px;
+    }
+    .contact-section .contact input{
+       width: 300px;
+       height: 40px;
+    }
+
+}
+@media screen and (min-width:900px) {
+    .nav-bar .fas{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .nav-bar .nav-list .nav-link{
+        font-size: 18px;
+    }
+
+    .hero-section .hero-detail .title {
+     font-family: baseneue;   
+    }
+    .hero-section .hero-detail .buttons{
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .brand-section .feature-details .title{
+        font-size: 25px;
+        text-transform: uppercase;
+        margin-bottom:20px;
+    }
+    
+    .brand-section .feature-details .description{
+        font-size: 14px;
+       
+    }
+    
+    .brand-section .section-content .brand-item {
+        flex-direction: column; /* Keep items stacked in a column */
+         /* Adjust spacing for smaller screens */
+        
+    }
+
+    .brand-section .brand-img-wrapper {
+        max-width: 350px; /* Further reduce the width */
+    }
+
+    .brand-section .brand-img {
+        height: 200px; /* Further reduce the height */
+    }
+    .brand-section .support-container .support-icon{
+        width: 40px;
+    }
+
+    .brand-section .support-container .text{
+        font-size: 13px;
+    }
+    .brand-section .support-container .text-supp{
+        font-size: 12px;
+    }
+
+    .collection-section .collection-detail .title .title-main{
+        font-size: 28px;
+    }
+
+    .collection-section .collect-img-wrapper{
+        width: 400px;
+        
+       
+    }
+    .collection-section .collect-img-wrapper .collect-img{
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        
+    }
+
+    .collection-section .collection-detail .title{
+        font-size: 26px;
+        width: 50%;
+        
+    }
+    .collection-section .collection-detail .description{
+        font-size: 12px;
+        margin: 10px 0;
+    }
+    .collection-section .collection-detail .button{
+        padding: 8px 10px;
+        font-size: 15px;
+        border-radius: 10px
+    }
+
+    .highlight-section .section-content {
+        display: flex; /* Use Flexbox */
+        flex-wrap: wrap; /* Allow wrapping if necessary */
+        justify-content: center; /* Center the cards horizontally */
+        gap: 15px; /* Adjust spacing between the cards */
+    }
+
+    .highlight-section .highlight-card {
+        width:100%; /* Ensure 2 cards fit in a row */
+        max-width: 250px; /* Set a maximum width for the cards */
+        height: auto; /* Maintain auto height */
+        border-radius: 3px;
+    }
+
+    .highlight-section .highlight-card .highlight-img {
+        width: 100%; /* Make the image responsive */
+        height: auto; /* Maintain aspect ratio */
+        object-fit: cover; /* Ensure the image fits within its container */
+        border-radius: 3px;
+    }
+
+    .contact-section .section-content{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .contact-section .contact-detail{
+        padding: 18px 27px;
+    }
+    .contact-section .contact-detail .title{
+        font-size: 20px;
+    }
+    .contact-section .contact-detail .description{
+        font-size: 12px;
+    }
+    .contact-section .contact input{
+       width: 250px;
+       height: 40px;
+    }
+
+    .footer-section .section-content{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+  
+}
+
+.animate{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.7s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+        opacity: 100%;
+        transform: translate(0px);
+    }
+}
+
+
+
+.animated {
+    opacity: 0; /* Start hidden */
+    transform: translateX(-50px); /* Start off-screen to the left */
+    transition: opacity 0.7s ease, transform 0.7s ease; /* Smooth transition */
+}
+
+/* Final state when the element is visible */
+.animated.active {
+    opacity: 1; /* Fully visible */
+    transform: translateX(0); /* Move to its original position */
+}
