@@ -336,6 +336,14 @@ header .nav-bar{
     margin: 5px 3px;
     color: rgb(43, 42, 42);
 }
+.highlight-section .btn-section{
+    margin-top: 20px;
+}
+.highlight-section .see-btn{
+    color: #14100f;
+    padding:0 30px;
+    font-size: 20px;
+}
 
 /*Contact Section*/
 
