@@ -1,324 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="google-site-verification" content="sWKTj63D5cuaptO3XmZBVikKBDWC5vwr2gw6O78M7HE" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Basic SEO-->
-    <meta name="description" content="JerseyStop is your ultimate destination for retro football jerseys, blending vintage sportswear with modern street style. Explore our unique collection and embrace the blokecore fashion movement.">
+<meta name="google-site-verification" content="sWKTj63D5cuaptO3XmZBVikKBDWC5vwr2gw6O78M7HE" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<!--Basic SEO-->
+<meta name="description" content="JerseyStop is your ultimate destination for retro football jerseys, blending vintage sportswear with modern street style. Explore our unique collection and embrace the blokecore fashion movement.">
 
-    <title>JerseyStop | Clothing </title>
+<title>JerseyStop — Retro Football Jerseys</title>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow+Condensed:wght@400;600;700&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="jersey.css" />
 
-     <!--Links for Favicon icon-->
-     <link rel="icon" type="img/jpg" href="img/logo.jpg">
-
-    <!--Links for CSS files-->
-    <link rel="stylesheet" href="jersey.css">
-    <link rel="stylesheet" href="general.css">
-
-    <!--Link for icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+ <!--Links for Favicon icon-->
+  <link rel="icon" type="img/jpg" href="img/logo.jpg">
 </head>
 <body>
-    <!--Header-->
-    <header>
-        <nav class="nav-bar section-content">
-            <div class="logo-bar">
-               
-                <a href="#" class="nav-logo">
-                    <h2 class="logo-text">JerseyStop</h2>
-                </a>
-            </div>
-          
-            <ul class="nav-list">
 
-                <button id="menu-close-button" class="fas fa-times"></button>
-            
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#collection" class="nav-link">Collection</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#highlights" class="nav-link">Highlights</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contact" class="nav-link">Contact</a>
-                </li>
-            </ul>
+<!-- MOBILE DRAWER -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <a href="#home" onclick="closeDrawer()">Home</a>
+  <a href="#about" onclick="closeDrawer()">About</a>
+  <a href="#collection" onclick="closeDrawer()">Collection</a>
+  <a href="#highlights" onclick="closeDrawer()">Highlights</a>
+  <a href="#contact" onclick="closeDrawer()">Contact</a>
+  <a href="https://www.instagram.com/jerseystopnepal" class="drawer-cta" target="_blank">Shop Now ↗</a>
+</div>
 
-            <button id="menu-open-button" class="fas fa-bars"></button>
+<!-- NAV -->
+<nav>
+  <a href="#home" class="logo">Jersey<span>Stop</span></a>
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#collection">Collection</a></li>
+    <li><a href="#highlights">Highlights</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://www.instagram.com/jerseystopnepal" class="nav-cta" target="_blank">Shop Now</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Open menu" onclick="toggleDrawer()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-        </nav>
-    </header>
+<!-- HERO -->
+<section id="home">
+  <div class="hero-left">
+    <div class="hero-tag">Kathmandu, Nepal · Est. 2024</div>
+    <h1 class="hero-h1">
+      HERE TO
+      <span class="accent">TAKE&shy;OVER</span>
+    </h1>
+    <p class="hero-sub">
+      Retro football jerseys from the golden era of the beautiful game.
+      Blokecore is not a trend — it's a lifestyle. Born from the stands, worn on the streets.
+    </p>
+    <div class="hero-actions">
+      <a href="#collection" class="btn-primary">Explore Collection</a>
+      <a href="#contact" class="btn-ghost">Get in Touch</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num">50<span>+</span></div>
+        <div class="stat-label">Jerseys In Stock</div>
+      </div>
+      <div>
+        <div class="stat-num">Rs.<span>2200</span></div>
+        <div class="stat-label">Starting Price</div>
+      </div>
+      <div>
+        <div class="stat-num">24<span>/7</span></div>
+        <div class="stat-label">Customer Support</div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-right">
+    <div class="hero-img-wrap">
+      <div class="hero-jersey-placeholder">
+        <div class="jersey-icon">🏆</div>
+        <div class="jersey-caption">Retro Jerseys · Nepal</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <main>
-        <!--Hero section-->
-        <section class="hero-section" >
-            <div class="section-content">
-                <div class="hero-detail animate">
-                    <h1 class="title">HERE TO TAKEOVER!</h1>
-                   
-                   <div class="buttons">
-                        <a href="#about" class="button explore">Explore &rarr;</a>
+<!-- MARQUEE -->
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <div class="marquee-item">Arsenal 2005-06</div>
+    <div class="marquee-item">Barcelona Champions 2009</div>
+    <div class="marquee-item">Bayern Munich 1998-99</div>
+    <div class="marquee-item">Real Madrid 1995</div>
+    <div class="marquee-item">Manchester United 1998-99</div>
+    <div class="marquee-item">AC Milan 2006-07</div>
+    <div class="marquee-item">Juventus 1997-98</div>
+    <div class="marquee-item">Inter Milan 1998-99</div>
+    <div class="marquee-item">Mexico 1998</div>
+    <div class="marquee-item">Club America 1995-96</div>
+    <!-- Duplicate for seamless loop -->
+    <div class="marquee-item">Arsenal 2005-06</div>
+    <div class="marquee-item">Barcelona Champions 2009</div>
+    <div class="marquee-item">Bayern Munich 1998-99</div>
+    <div class="marquee-item">Real Madrid 1995</div>
+    <div class="marquee-item">Manchester United 1998-99</div>
+    <div class="marquee-item">AC Milan 2006-07</div>
+    <div class="marquee-item">Juventus 1997-98</div>
+    <div class="marquee-item">Inter Milan 1998-99</div>
+    <div class="marquee-item">Mexico 1998</div>
+    <div class="marquee-item">Club America 1995-96</div>
+  </div>
+</div>
 
-                        <a href="#contact" class="button location">Contact Us &rarr;</a>
-                   </div>
-                </div>
-           
-                
-            </div>
-           
-        </section>
-        <!--Featured section-->
-        <section class="brand-section animated" id="about">
-            <h1 class="section-title"> 
-                Welcome To Our Store
-            </h1>
-            <div class="section-content">
-                    <div class="feature-details animated">
-                       
-                        <h1 class="title"> <span class="title-main">Blokecore:</span>The Raw,Rebellious Spirit of Football Meets Street Style</h1>
-                        
-                        <p class="description">Blokecore isn’t just a trend—it’s a movement.
-                            Born from the stands,the streets,and the unfiltered passion of football culture,this style is all about mixing vintage sportswear with modern attitude.
-                            Think retro jerseys,track jackets,baggy jeans,and beat-up sneakers—worn with the swagger of a ’90s terrace legend.
-                        </p> 
-                    </div>
-                    <div class="container animated">
-                        <div class="support-container">
-                            <img src="img/customer-support.png" alt="customer-support" class="support-icon">
-                            <h2 class="text">24 X 7 FREE SUPPORT</h2>
-                            <p class="text-supp">
-                                Friendly customer support available whenever you need help.
-                            </p>
-                        </div>
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-text">
+    <div class="section-tag">Our Story</div>
+    <h2 class="section-h2">BLOKECORE IS A MOVEMENT</h2>
+    <p>Born from the stands, the streets, and the unfiltered passion of football culture, Blokecore is all about mixing vintage sportswear with modern attitude.</p>
+    <p>Think retro jerseys, track jackets, baggy jeans, and beat-up sneakers — worn with the swagger of a '90s terrace legend. JerseyStop brings that energy straight to Nepal.</p>
+    <div class="about-features">
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <div class="feature-title">24/7 Support</div>
+        <div class="feature-desc">Friendly customer service, whenever you need us.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">↩</div>
+        <div class="feature-title">Easy Refunds</div>
+        <div class="feature-desc">Hassle-free refunds within 2–3 days of purchase.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📦</div>
+        <div class="feature-title">Free Shipping</div>
+        <div class="feature-desc">No hidden fees, no extra charges. Ever.</div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🏆</div>
+        <div class="feature-title">Authentic Retro</div>
+        <div class="feature-desc">Carefully sourced jerseys from the golden eras.</div>
+      </div>
+    </div>
+  </div>
+  <div class="about-visual">
+    <div class="about-block big">RETRO</div>
+    <div class="about-block small">
+      <div class="big-num">90s</div>
+      <div class="small-lbl">Golden Era</div>
+    </div>
+  </div>
+</section>
 
-                        <div class="support-container">
-                            <img src="img/product-return.png" alt="refund-policy" class="support-icon">
-                            <h2 class="text">REFUND THE PRODUCT</h2>
-                            <p class="text-supp">
-                                We offer refunds on products within 2–3 days of purchase.
-                        </div>
+<!-- COLLECTION -->
+<section id="collection">
+  <div class="collection-header">
+    <div>
+      <div class="section-tag">The Vault</div>
+      <h2 class="section-h2">OUR COLLECTION</h2>
+    </div>
+    <a href="https://www.instagram.com/jerseystopnepal" class="see-more" target="_blank">View All on Instagram ↗</a>
+  </div>
+  <div class="jersey-grid">
+    <!-- Row 1 -->
+    <div class="jersey-card">
+      <div class="jersey-img-area"><img src="img/ar-f.jpg" alt=""></div>
+      <div class="jersey-overlay"><div class="overlay-btn">Inquire</div></div>
+      <div class="jersey-info">
+        <div>
+          <div class="jersey-name">Arsenal</div>
+          <div class="jersey-year">2005–06</div>
+        </div>
+        <div class="jersey-price">Rs.2500</div>
+      </div>
+    </div>
+    <div class="jersey-card">
+      <div class="jersey-img-area"><img src="img/barca-an.jpg" alt=""></div>
+      <div class="jersey-overlay"><div class="overlay-btn">Inquire</div></div>
+      <div class="jersey-info">
+        <div>
+          <div class="jersey-name">Barcelona (125th Anniv.)</div>
+          <div class="jersey-year">2025–26</div>
+        </div>
+        <div class="jersey-price">Rs.2500</div>
+      </div>
+    </div>
+    <div class="jersey-card">
+      <div class="jersey-img-area"><img src="img/barca-uni-f.jpg" alt=""></div>
+      <div class="jersey-overlay"><div class="overlay-btn">Inquire</div></div>
+      <div class="jersey-info">
+        <div>
+          <div class="jersey-name">Barcelona (Champions)</div>
+          <div class="jersey-year">2009</div>
+        </div>
+        <div class="jersey-price">Rs.2700</div>
+      </div>
+    </div>
+    <div class="jersey-card">
+      <div class="jersey-img-area"><img src="img/bayern-f.jpg" alt=""></div>
+      <div class="jersey-overlay"><div class="overlay-btn">Inquire</div></div>
+      <div class="jersey-info">
+        <div>
+          <div class="jersey-name">Bayern Munich</div>
+          <div class="jersey-year">1998–99</div>
+        </div>
+        <div class="jersey-price">Rs.2500</div>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="jersey-card">
+      <div class="jersey-img-area"><img src="img/bwin-away-f.jpg" alt=""></div>
+      <div class="jersey-overlay"><div class="overlay-btn">Inquire</div></div>
+      <div class="jersey-info">
+        <div>
+          <div class="jersey-name">Real Madrid (Away)</div>
+          <div class="jersey-year">1999–01</div>
+        </div>
+        <div class="jersey-price">Rs.2500</div>
+      </div>
+    </div>
+    <div class="jersey-card">
+      <div class="jersey-img-area"><img src="img/cheof.jpg"></div>
+      <div class="jersey-overlay"><div class="overlay-btn">Inquire</div></div>
+      <div class="jersey-info">
+        <div>
+          <div class="jersey-name">Chelsea (Champions)</div>
+          <div class="jersey-year">2007</div>
+        </div>
+        <div class="jersey-price">Rs.2500</div>
+      </div>
+    </div>
+    <div class="jersey-card">
+      <div class="jersey-img-area"><img src="img/ieka-f.jpg"></div>
+      <div class="jersey-overlay"><div class="overlay-btn">Inquire</div></div>
+      <div class="jersey-info">
+        <div>
+          <div class="jersey-name">Real Madrid</div>
+          <div class="jersey-year">1998–99</div>
+        </div>
+        <div class="jersey-price">Rs.2500</div>
+      </div>
+    </div>
+    <div class="jersey-card">
+      <div class="jersey-img-area"><img src="img/interm-f.jpg"></div>
+      <div class="jersey-overlay"><div class="overlay-btn">Inquire</div></div>
+      <div class="jersey-info">
+        <div>
+          <div class="jersey-name">Inter Milan</div>
+          <div class="jersey-year">1998–99</div>
+        </div>
+        <div class="jersey-price">Rs.2500</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                        <div class="support-container">
-                            <img src="img/fast-delivery.png" alt="free-delivery" class="support-icon">
-                            <h2 class="text">FREE SHIPPING </h2>
-                            <p class="text-supp">
-                                Enjoy free shipping—no extra charges, no hidden fees.
-                            </p>
-                        </div>
-                        
-                    </div>
-                
-            </div>
-        </section>
+<!-- HIGHLIGHTS -->
+<section id="highlights">
+  <div class="section-tag">Fan Favourites</div>
+  <h2 class="section-h2">HIGHLIGHTS</h2>
+  <div class="highlights-grid">
+    <div class="highlight-card">
+      <div class="hc-icon"><img src="img/mansc-f.jpg" alt=""></div>
+      <div class="hc-name">Manchester United</div>
+      <div class="hc-year">Final Ed · 2007–08</div>
+      <div class="hc-price">Rs.2700</div>
+    </div>
+    <div class="highlight-card">
+      <div class="hc-icon"><img src="img/milan-f.jpg" alt=""></div>
+      <div class="hc-name">AC Milan</div>
+      <div class="hc-year">2006–07</div>
+      <div class="hc-price">Rs.2700</div>
+    </div>
+    <div class="highlight-card">
+      <div class="hc-icon"><img src="img/juve-f.jpg" alt=""></div>
+      <div class="hc-name">Juventus</div>
+      <div class="hc-year">1997–98</div>
+      <div class="hc-price">Rs.2500</div>
+    </div>
+    <div class="highlight-card">
+      <div class="hc-icon"><img src="img/real-wind.png" alt=""></div>
+      <div class="hc-name">Real Madrid Windbreaker</div>
+      <div class="hc-year">1995</div>
+      <div class="hc-price">Rs.3000</div>
+    </div>
+  </div>
+</section>
 
-        <!--Collection section-->
-        <section class="collection-section" id="collection">
-            <div class="section-content ">
-                <div class="collect-img-wrapper animated">
-                    <img src="img/col2.jpg" alt="collection" class="collect-img">
-                </div>
+<!-- CONTACT -->
+<section id="contact">
+  <div>
+    <div class="section-tag">Find Us</div>
+    <h2 class="section-h2">GET IN TOUCH</h2>
+    <div class="contact-info">
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Kathmandu, Nepal</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div>
+          <div class="contact-label">Phone / WhatsApp</div>
+          <div class="contact-value">(+977) 9742455465</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉</div>
+        <div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">jerseystopnepal@gmail.com</div>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📸</div>
+        <div>
+          <div class="contact-label">Instagram</div>
+          <div class="contact-value">@jerseystopnepal</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="contact-form">
 
-                <div class="collection-detail animated">
-                    <h1 class="title"><span class="title-main">OUR</span> COLLECTION</h1>
-                    <p class="description">YOUR HUNT FOR RETRO JERSEY ENDS HERE!</p>
-                    <div class="buttons">
-                        <a href="collection.html" class="button">Shop Now</a>
-                    </div>
-                </div>
-            </div>
-            
-        </section>
+   <form action="https://api.web3forms.com/submit" method="POST">
+  
+  <input type="hidden" name="access_key" value="63a28e8a-01ce-4e5b-a059-20dddae117db">
 
-        <!--Highlights section-->
-        <section class="highlight-section animated" id="highlights">
-            <h1 class="section-title">Highlights</h1>
-            <div class="section-content">
-                
-                <div class="highlight-card">
-                 <a href="https://www.instagram.com/jerseystopnepal" target="_blank"><img src="img/ar-f.jpg" alt="" class="highlight-img"></a> 
-                    <h1 class="text">Arsenal</h1>
-                    <p class="date">2005-06</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/barca-an.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Barcelona <span> (125th-Anniversary)</span></h1>
-                    <p class="date">2025-26</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/barca-uni-f.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Barcelona <span>(Champions)</span></h1>
-                    <p class="date">2009</p>
-                    <p class="price">Rs. 2700</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/bayern-f.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Bayern Munich</h1>
-                    <p class="date">1998-99</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/bwin-away-f.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Real-mardrid <span>(Away)</span></h1>
-                    <p class="date">1999-01</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/cheof.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Chelsea <span>(Champions)</span></h1>
-                    <p class="date">2007</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/ieka-f.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Real-mardrid</h1>
-                    <p class="date">1998-99</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/inter-f.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Inter Milan</h1>
-                    <p class="date">1998-99</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/mansc-f.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Manchester United</h1>
-                    <p class="date">1998-99</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/real-wind.png" alt="" class="highlight-img" style="height: 250px;"></a>
-                    <h1 class="text">Real-mardrid <span>(Windbreaker)</span></h1>
-                    <p class="date">1995</p>
-                    <p class="price">Rs. 3200</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/milan-f.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">AC Milan</h1>
-                    <p class="date">2006-07</p>
-                    <p class="price">Rs. 2700</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/mansc.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Manchester United <span>(Final Ed)</span></h1>
-                    <p class="date">2007-08</p>
-                    <p class="price">Rs. 2700</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/juve-f.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Juventus</h1>
-                    <p class="date">1997-98</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/real-bwin-f.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Real-mardrid</h1>
-                    <p class="date">2011-12</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/mexico-f.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Mexico</h1>
-                    <p class="date">1998</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-                <div class="highlight-card">
-                    <a href="https://www.instagram.com/jerseystopnepal" target="_blank"> <img src="img/coca.jpg" alt="" class="highlight-img"></a>
-                    <h1 class="text">Club America</h1>
-                    <p class="date">1995-96</p>
-                    <p class="price">Rs. 2500</p>
-                </div>
-            </div>
-            <div class="btn-section">
-                <a href="https://www.instagram.com/jerseystopnepal" target="_blank" class="see-btn">See More</a>
-            </div>
-            
-        </section>
+  <div class="form-title">Recommend a Jersey</div>
 
-        <!--Contact Section-->
-        <section class="contact-section" id="contact">
-            <h1 class="section-title animated">Contact Us</h1>
-            <div class="section-content">
-                <div class="contact-details animated">
-                    <div class="contact-detail">
-                        <h1 class="title">Location</h1>
-                 
-                        <p class="description"><i class="fa-solid fa-location-crosshairs color"></i>
-                            Kathmandu, Nepal</p>
-                    </div>
-                
-                     <div class="contact-detail">
-                        <h1 class="title">Contact</h1>
-                   
-                        <p class="description"> <i class="fa-solid fa-phone color"></i>
-                            (+977) 9742455465</p>
-                    </div>
-                  
-                    <div class="contact-detail">
-                        <h1 class="title">Email</h1>
-                    
-                        <p class="description"><i class="fa-regular fa-envelope color"></i>
-                            jerseystopnepal@gmail.com</p>  
-                    </div>
-                   
-                </div>
-                
-                    <form action="https://api.web3forms.com/submit" method="POST" class="contact animated">
-                        <div class="contact-title">
-                            <h1 class="title">Recommend Us</h1>
-                        </div>
-                        <input type="hidden" name="access_key" value="63a28e8a-01ce-4e5b-a059-20dddae117db">
+  <div class="form-group">
+    <label class="form-label">Your Name</label>
+    <input type="text" name="name" class="form-input" placeholder="e.g. Suman Thapa" required>
+  </div>
 
-                        <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
+  <div class="form-group">
+    <label class="form-label">Email</label>
+    <input type="email" name="email" class="form-input" placeholder="you@email.com" required>
+  </div>
 
-                        <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
+  <div class="form-group">
+    <label class="form-label">Message / Recommendation</label>
+    <textarea name="message" class="form-textarea" placeholder="Tell us which jersey you're looking for..." required></textarea>
+  </div>
 
-                       <textarea name="message" placeholder="Give Us Your Recommend Jersey's Full Details" class="contact-inputs" required></textarea>
+  <button type="submit" class="form-submit">Send Message</button>
 
-                       <button type="submit" class="submit-btn">Submit</button>
-                    </form>
-               
-            </div>
-        </section>
+</form>
 
-        <!--Footer Section-->
-        <footer class="footer-section">
-           <div class="section-content">
-            <p class="copyright-text"> &#169; JerseyStop | Clothing</p>
-            
-            <div class="social-link-list">
-                <p class="text">Follow Us</p>
-                <a href="https://www.facebook.com/profile.php?id=61565590057423" class="social-link" target="_blank">
-                    <i class="fa-brands fa-facebook"></i>
-                </a>
-                <a href="https://www.instagram.com/jerseystopnepal" class="social-link" target="_blank">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.tiktok.com/@jerseystopnepal" class="social-link" target="_blank">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-               </div>
+  </div>
+</section>
 
-               <p class="policy-text">
-                <a href="#" class="policy-link">Privacy policy</a>
-                <span class="separator">&bull;</span>
-                <a href="#" class="policy-link">Refund policy</a>
-               </p>
+<!-- FOOTER -->
+<footer>
+  <a href="#home" class="footer-logo">Jersey<span>Stop</span></a>
+  <ul class="footer-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#collection">Collection</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+    <li><a href="#">Refund Policy</a></li>
+  </ul>
+  <div class="footer-copy">© 2024 JerseyStop. Kathmandu, Nepal.</div>
+</footer>
 
-           </div>
-          
-        </footer>
-    </main>
+<script src="jersey.js">
 
-    <script src="jersey.js"></script>
+</script>
 </body>
 </html>
